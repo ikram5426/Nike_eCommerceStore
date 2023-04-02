@@ -9,7 +9,7 @@ const VideoClips = ({ imgsrc, clip }) => {
         alt={imgsrc}
         className="inset-0 flex h-full w-full object-cover absolute top-0 left-0 right-0 rounded-xl z-10 opacity-100 transition-opacity duration-500"
       />
-      <div className=" bg-white blur-effect-theme absolute z-[100] opacity-100 top-0 left-0 right-0 h-8 w-8 md:h-5 md:w-5 flex rounded-full items-center justify-center ml-auto mr-auto mt-[30%]">
+      <div className=" bg-white blur-effect-theme absolute z-[100] opacity-100 top-0 left-0 right-0 h-8 w-8 md:h-5 md:w-5 flex rounded-full items-center justify-center ml-auto mr-auto mt-[30%] group-hover:opacity-0">
         <PlayCircleFilledWhiteOutlinedIcon fontSize='large' className="icon-style text-slate-900 md:h-3 md:w-3"></PlayCircleFilledWhiteOutlinedIcon>
       </div>
       <video

@@ -1,7 +1,10 @@
 import React from "react";
 import VideoClips from "./VideoClips";
+import SocialLinks from './SocialLinks';
 
-const Hero = ({heroapi:{title,subtitle,btntext,img,videos,sociallinks}}) => {
+const Hero = ({
+  heroapi: { title, subtitle, btntext, img, videos, sociallinks },
+}) => {
   return (
     <div className="relative w-auto h-auto flex flex-col">
       <div className="bg-theme clip-path h-[85vh] lg:h-[75vh] md:h-[65vh] sm:h-[55vh] w-auth top-0 left-0 absolute z-0 right-0 opacity-100"></div>
@@ -30,13 +33,17 @@ const Hero = ({heroapi:{title,subtitle,btntext,img,videos,sociallinks}}) => {
               );
             })}
           </div>
-          <div></div>
+          <div className='grid items-center absolute right-0 gap-3 top-[33vh] lg:top[27vh]'>
+            {sociallinks.map((link,i) =>{
+            return  <SocialLinks key={i} icon={link.icon}></SocialLinks>
+            })}
+          </div>
         </div>
         <div>
           <img
             src={img}
             alt="main pic"
-            className="w-auto h-[45vh] lg:[35vh] md:h-[31vh] sm:h-[25vh] xsm:h-[19vh] transitions-theme -rotate-[25deg] hover:rotate-0 cursor-pointer object-fill"
+            className="w-auto h-[45vh] lg:h-[30vh] md:h-[20vh] sm:h-[13vh] xsm:h-[19vh] transitions-theme -rotate-[25deg] hover:rotate-0 cursor-pointer object-fill"
           />
         </div>
       </div>

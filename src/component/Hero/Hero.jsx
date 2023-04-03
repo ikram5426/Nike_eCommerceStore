@@ -22,7 +22,7 @@ const Hero = ({
           >
             {btntext}
           </button>
-          <div className="grid gap-5 md:gap-3 absolute top-[35vh] md:top-[27vh] left-[11%] xl:left-0 w-auto h-auto">
+          <div className="grid gap-5 md:gap-3 absolute top-[35vh] lg:top-[27vh] md:top-[20vh] left-[11%] xl:left-0 w-auto h-auto">
             {videos.map((vid, i) => {
               return (
                 <VideoClips
@@ -39,11 +39,11 @@ const Hero = ({
             })}
           </div>
         </div>
-        <div>
+        <div className="">
           <img
             src={img}
             alt="main pic"
-            className="w-auto h-[45vh] lg:h-[30vh] md:h-[20vh] sm:h-[13vh] xsm:h-[19vh] transitions-theme -rotate-[25deg] hover:rotate-0 cursor-pointer object-fill"
+            className="w-auto  h-[40vh] lg:h-[30vh] md:h-[20vh] sm:h-[13vh] xsm:h-[19vh] transitions-theme -rotate-[25deg] hover:rotate-0 cursor-pointer object-fill"
           />
         </div>
       </div>

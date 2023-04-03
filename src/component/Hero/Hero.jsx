@@ -22,7 +22,7 @@ const Hero = ({
           >
             {btntext}
           </button>
-          <div className="grid gap-5 md:gap-3 absolute top-[35vh] lg:top-[27vh] md:top-[20vh] left-[11%] xl:left-0 w-auto h-auto">
+          <div className="grid gap-5 md:gap-3 absolute top-[25vh] lg:top-[20vh] md:top-[15vh] left-[11%] xl:left-0 w-auto h-auto">
             {videos.map((vid, i) => {
               return (
                 <VideoClips

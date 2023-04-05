@@ -1,9 +1,11 @@
 import React from 'react'
-import { Content, Hero, Sales, Stories } from './component'
-import { heroapi, popularSales ,topRatedSales,highlight, sneaker, story} from "../src/data/data";
+import { Content, Footer, Hero, Navbar, Sales, Stories } from './component'
+import { heroapi, popularSales ,topRatedSales,highlight, sneaker, story,footerAPI} from "../src/data/data";
 
 const App = () => {
   return (
+    <React.Fragment>
+      <Navbar/>
     <main className="flex flex-col gap-16 relative">
       <Hero heroapi={heroapi}></Hero>
       <Sales endPoint={popularSales} ifExist></Sales>
@@ -12,6 +14,9 @@ const App = () => {
       <Content endPoint={sneaker}></Content>
       <Stories story={story}></Stories>
     </main>
+    <Footer footerAPI={footerAPI}></Footer>
+    </React.Fragment>
+
   );
 }
 

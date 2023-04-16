@@ -1,10 +1,11 @@
 import React from 'react'
-import { Content, Footer, Hero, Navbar, Sales, Stories } from './component'
+import { Cart, Content, Footer, Hero, Navbar, Sales, Stories } from './component'
 import { heroapi, popularSales ,topRatedSales,highlight, sneaker, story,footerAPI} from "../src/data/data";
 
 const App = () => {
   return (
     <React.Fragment>
+      <Cart/>
       <Navbar/>
     <main className="flex flex-col gap-16 relative">
       <Hero heroapi={heroapi}></Hero>
